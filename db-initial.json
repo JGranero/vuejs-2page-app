@@ -1,0 +1,149 @@
+[
+  {
+    "id": "HYm3QIXsbAQYL",
+    "givenName": "Turcotte, Kutch and Kiehn",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Fri Jan 25 2019 15:18:46 GMT-0500 (EST)",
+    "updatedAt": "Tue Jul 16 2019 02:10:50 GMT-0400 (EDT)",
+    "tags": [
+      "Functionality",
+      "Program",
+      "Data"
+    ]
+  },
+  {
+    "id": "bcje0CeDJEOPJ",
+    "givenName": "Goyette - Bode",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Thu Jul 19 2018 20:25:39 GMT-0400 (EDT)",
+    "updatedAt": "Tue Jul 16 2019 11:49:43 GMT-0400 (EDT)",
+    "tags": [
+      "Group",
+      "Accounts"
+    ]
+  },
+  {
+    "id": "YkaTa0MoZhuuC",
+    "givenName": "Quigley Group",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Wed Jan 09 2019 05:18:07 GMT-0500 (EST)",
+    "updatedAt": "Tue Jul 16 2019 14:41:21 GMT-0400 (EDT)",
+    "tags": [
+      "Accounts",
+      "Program",
+      "Markets"
+    ]
+  },
+  {
+    "id": "9p5ErTTI1dei0",
+    "givenName": "Simonis - Bartell",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Thu May 16 2019 02:01:19 GMT-0400 (EDT)",
+    "updatedAt": "Mon Jul 15 2019 18:12:54 GMT-0400 (EDT)",
+    "tags": [
+      "Data"
+    ]
+  },
+  {
+    "id": "DvVQltXwmGYCd",
+    "givenName": "Ondricka Group",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Sun Jul 14 2019 02:13:24 GMT-0400 (EDT)",
+    "updatedAt": "Mon Jul 15 2019 22:24:43 GMT-0400 (EDT)",
+    "tags": [
+      "Communications",
+      "Optimization"
+    ]
+  },
+  {
+    "id": "rvBGyKvxXxp0I",
+    "givenName": "Tromp - Daniel",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Wed Mar 13 2019 10:58:30 GMT-0400 (EDT)",
+    "updatedAt": "Tue Jul 16 2019 11:53:07 GMT-0400 (EDT)",
+    "tags": [
+      "Intranet",
+      "Identity"
+    ]
+  },
+  {
+    "id": "6LQHw4JpqzXaz",
+    "givenName": "Carroll Inc",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Mon Aug 06 2018 10:41:37 GMT-0400 (EDT)",
+    "updatedAt": "Mon Jul 15 2019 20:43:27 GMT-0400 (EDT)",
+    "tags": [
+      "Optimization",
+      "Accountability",
+      "Operations"
+    ]
+  },
+  {
+    "id": "roCgwsbViImjE",
+    "givenName": "Weissnat, Osinski and Welch",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Sat Nov 24 2018 19:31:22 GMT-0500 (EST)",
+    "updatedAt": "Mon Jul 15 2019 16:54:22 GMT-0400 (EDT)",
+    "tags": [
+      "Solutions",
+      "Identity"
+    ]
+  },
+  {
+    "id": "QrvbPTYtcv9Ol",
+    "givenName": "Adams LLC",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Wed Apr 10 2019 19:47:09 GMT-0400 (EDT)",
+    "updatedAt": "Mon Jul 15 2019 21:04:36 GMT-0400 (EDT)",
+    "tags": [
+      "Communications",
+      "Mobility",
+      "Marketing"
+    ]
+  },
+  {
+    "id": "unhXTGFqnGsrl",
+    "givenName": "Monahan LLC",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Mon Jun 17 2019 00:38:28 GMT-0400 (EDT)",
+    "updatedAt": "Mon Jul 15 2019 19:29:47 GMT-0400 (EDT)",
+    "tags": [
+      "Interactions",
+      "Implementation",
+      "Markets"
+    ]
+  },
+  {
+    "id": "M-DHZcwIQUZBN",
+    "givenName": "Cummerata and Sons",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Thu Aug 30 2018 22:36:19 GMT-0400 (EDT)",
+    "updatedAt": "Tue Jul 16 2019 09:47:16 GMT-0400 (EDT)",
+    "tags": [
+      "Solutions"
+    ]
+  },
+  {
+    "id": "WdDJ2IgXJvv-5",
+    "givenName": "Upton - Ledner",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Wed Jan 23 2019 09:56:02 GMT-0500 (EST)",
+    "updatedAt": "Mon Jul 15 2019 18:09:02 GMT-0400 (EDT)",
+    "tags": [
+      "Solutions",
+      "Operations"
+    ]
+  },
+  {
+    "id": "oL6lF_0kFEG9D",
+    "givenName": "Bruen - Beer",
+    "logo": "http://lorempixel.com/640/480/business",
+    "createdAt": "Sun Jun 09 2019 14:41:37 GMT-0400 (EDT)",
+    "updatedAt": "Tue Jul 16 2019 09:23:50 GMT-0400 (EDT)",
+    "tags": [
+      "Applications",
+      "Response",
+      "Usability"
+    ]
+  }
+]
