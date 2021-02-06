@@ -1,7 +1,8 @@
 <template>
-    <div id="header">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="topnav">
+      <div id="topnav__list-icon"><img src="@/assets/images/list.svg"/></div>
+      <div id="topnav__title">{{ $route.name }}</div>
+      <div id="topnav__left"></div>
     </div>
 </template>
 

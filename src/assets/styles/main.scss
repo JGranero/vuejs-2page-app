@@ -4,9 +4,11 @@ Base Imports
 
 @import './base/reset';
 @import './base/base';
+@import './base/fonts';
 
 
 /* ===============
 Component Imports
 =============== */
 @import './components/header';
+@import './components/card';

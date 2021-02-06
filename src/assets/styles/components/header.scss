@@ -2,7 +2,29 @@
       HEADER
 =============== */
 
+#topnav {
+  background-color: $lightblue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
 
-#header {
-      background-color: $lightblue;
+  &__list-icon {
+    width: 20%;
+
+    img {
+      height: 35px;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 60%;
+  }
+
+  &__left {
+    width: 20%;
+  }
 }
