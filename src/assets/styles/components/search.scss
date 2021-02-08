@@ -1,0 +1,21 @@
+/* ===============
+      SEARCH
+=============== */
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: $lightblue;
+  color: white;
+
+  &__input{
+    border: $lightgrey;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 5px;
+    min-width: 60%;
+  }
+}

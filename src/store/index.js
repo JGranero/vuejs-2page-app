@@ -1,14 +1,18 @@
-import { createStore } from 'vuex'
+import Vuex from 'vuex';
+import * as actions from './actions';
+import * as mutations from './mutations';
+import * as getters from './getters';
 
-export default createStore({
-  state: {
-    pageName: "",
-  },
-  mutations: {
-  },
-  actions: {
-    
-  },
-  modules: {
-  }
-})
+
+const state = {
+  sites: [],
+  pageTotale: Number,
+  query: ""
+};
+
+export default new Vuex.Store({
+  state,
+  actions,
+  mutations,
+  getters
+});

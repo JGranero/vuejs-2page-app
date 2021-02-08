@@ -5,18 +5,34 @@
 
 .card {
   display: flex;
+  align-items: center;
   padding: 10px;
   margin: 15px 0;
   box-shadow: 6px 5px 8px 1px $lightgrey;
 
   &__image {
     margin-right: 15px;
+    position: relative;
 
     img{
       width: 75px;
       height: 75px;
       border-radius: 50%;
     }
+  }
+
+  &__index {
+    position: absolute;
+      left: 0;
+      top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: rgba($color: $white, $alpha: .8);
+    font-family: 'Roboto';
   }
 
   &__arrow {
@@ -31,7 +47,6 @@
       width: 20px;
     }
   }
-
 
   h2 {
     font-size: 22px;

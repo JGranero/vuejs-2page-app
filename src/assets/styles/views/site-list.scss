@@ -1,0 +1,37 @@
+/* ===================
+    SITE LIST PAGE
+====================== */
+
+.site-list {
+  
+  #loadmore {
+    margin: 10px auto 15px;
+    padding: 5px 20px;
+    height: 55px;
+    border-radius: 50px;
+    border: $darkblue 1px solid;
+    color: $darkgrey;
+    background-color: $white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      background-image: url('../images/nextdarkgrey.svg');
+      background-size: cover;
+      width: 15px;
+      height: 15px;
+      margin-left: 8px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__no-result {
+    margin: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    color: $darkgrey;
+  }
+}

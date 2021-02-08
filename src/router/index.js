@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SiteList from '../views/SiteList.vue'
-import SiteDetail from '../views/SiteDetail.vue'
+import SiteDetails from '../views/SiteDetails.vue'
 
 const routes = [
   {
@@ -9,10 +9,11 @@ const routes = [
     component: SiteList
   },
   {
-    path: '/site-detail',
-    name: 'Site Detail',
-    component: SiteDetail
-  }
+    path: '/site-details',
+    name: 'Site Details',
+    component: SiteDetails,
+    props: true
+  },
 ]
 
 const router = createRouter({

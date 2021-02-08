@@ -1,44 +1,50 @@
 <template>
-  <div class="home">
-    <Card v-for="site in sites" :key="site.id" :site="site"/>
-
+  <div class="site-list">
+    <Search/>
+    <div class="site-list__no-result" v-if="$store.state.sites.length == 0">Sorry, no result found with "<strong>{{ $store.state.query }}</strong>".</div>
+    <Card v-for="(site, index) in $store.state.sites" :key="site.id" :index="index" :site="site"/>
+    <button v-show="currentPage < $store.state.pageTotal" class="loadmore" id="loadmore">
+      <div class="loadmore__content" v-on:click="loadMore()">Load more</div>
+    </button>
   </div>
 </template>
 
 <script>
 import Card from '@/components/Card.vue';
+import Search from '@/components/Search.vue';
+import { mapActions } from 'vuex';
 
 export default {
   name: 'Site List',
   data() {
     return {
       sites: null,
-      currentPage: 1
+      currentPage: 1,
     }
   },
   components: {
-    Card
+    Card,
+    Search
   },
   methods: {
-    getSites() {
-      const axios = require('axios');
+    ...mapActions(['getSites', 'addMoreSites']),
+    loadMore() {
+      this.currentPage++;
 
-      axios.get('http://localhost:3000/sites?_limit=10&offset=12', {
-        params: {
-          _page: this.currentPage,
-          _limit: 10,
-        }
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
-      .then(response=>{this.sites=response.data;})
+      this.getSites({
+      page: this.currentPage,
+      limit: 10,
+      pagination: true
+    });
     }
   },
   computed: {
   },
   mounted() {
-    this.getSites();
+    this.getSites({
+      page: 1,
+      limit: 10
+    });
   }
 }
 </script>
