@@ -27,6 +27,7 @@ Time was running out but I will probably add a photo carousel for the Site Detai
 - Vuex
 - Babbel
 - ESlint
+- Axios
 ```
 
 ### Compiles and hot-reloads for development
