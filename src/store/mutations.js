@@ -25,3 +25,7 @@ export const UPDATE_COPY = (state, payload) => {
 export const UPDATE_LANGUAGE = (state, payload) => {
   state.lang = payload;
 };
+
+export const RESET_QUERY = (state) => {
+  state.query = null;
+};

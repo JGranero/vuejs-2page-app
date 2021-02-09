@@ -1,8 +1,8 @@
 <template>
   <div class="site-list">
     <Search/>
-    <div class="site-list__results">{{ $store.state.resultTotal }} {{ copy.results }}</div>
-    <div class="site-list__no-result" v-if="$store.state.sites.length == 0">{{ copy.notFound }} "<strong>{{ $store.state.query }}</strong>".</div>
+    <div class="site-list__results" v-show="$store.state.resultTotal > 0">{{ $store.state.resultTotal }} {{ copy.results }}</div>
+    <div class="site-list__no-result" v-show="$store.state.resultTotal == 0">{{ copy.notFound }} "<strong>{{ $store.state.query }}</strong>".</div>
     <Card v-for="(site, index) in $store.state.sites" :key="site.id" :index="index" :site="site"/>
     <LoadMore v-show="currentPage < $store.state.pageTotal" v-on:click="loadMore()" class="loadmore--blue"/>
   </div>

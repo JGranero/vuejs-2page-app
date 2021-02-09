@@ -13,9 +13,25 @@
 
   &__input{
     border: $lightgrey;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
     margin-left: 10px;
     padding: 5px;
-    min-width: 60%;
+    min-width: 55%;
+    height: 17px;
+  }
+
+  &__cross {
+    border-radius: 0 4px 4px 0;
+    background-color: $white;
+    padding: 7px;
+    height: 27px;
+
+    &--grey {
+    color: $grey;
+    }
+
+    &--white {
+      color: $white;
+      }
   }
 }
