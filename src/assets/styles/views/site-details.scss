@@ -53,6 +53,10 @@
     .container {
       height: 244px;
       overflow: hidden;
+      @include breakpoint(md) {
+        height: auto;
+        max-height: 450px;
+      }
     }
 
     img {

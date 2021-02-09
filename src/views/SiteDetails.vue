@@ -1,5 +1,6 @@
 <template>
   <div class="site-details">
+    <!-- Part with the top details -->
     <div class="site-details__top-info">
       <div class="container">
         <ArrowIcon @click="goBack()"/>
@@ -13,12 +14,15 @@
         </div>
       </div>
     </div>
+
+    <!-- Part for the image -->
     <div class="site-details__image">
       <div class="container">
         <img :src="site.images[0]"/>
       </div>
     </div>
 
+    <!-- Part with all the info -->
     <div class="container">
       <div class="site-details__main-info">
         <div class="site-details__info-group">

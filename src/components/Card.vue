@@ -1,5 +1,5 @@
 <template>
-<router-link to="/site-details" v-on:click="stockDetails()">
+  <router-link to="/site-details" v-on:click="stockDetails()">
   <div class="card">
     <div class="card__image">
       <img :src="site.images[0]"/>
