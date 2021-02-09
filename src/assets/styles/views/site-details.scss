@@ -10,6 +10,9 @@
     background-color: $lightblue;
     border-top: 1px solid $white;
     color: $white;
+    @include breakpoint(lg) {
+      color: $black;
+    }
 
     svg {
       height: 20px;
