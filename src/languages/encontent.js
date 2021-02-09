@@ -1,4 +1,18 @@
 export const encontent = {
+  header: {
+    nav1: {
+      text: `&#8962; Home`,
+      path: `/`
+    },
+    nav2: {
+      text: `Could be`,
+      path: `/`
+    },
+    nav3: {
+      text: `A Menu`,
+      path: `/`
+    },
+  },
   loadmore: {
     text: `Load More`
   },

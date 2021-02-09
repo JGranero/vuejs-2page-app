@@ -10,12 +10,68 @@
   align-items: center;
   color: $white;
 
+  &__list-icon {
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
   &__title {
     font-size: 1.55rem;
     text-align: center;
     width: 60%;
     letter-spacing: .1rem;
     font-family: "WorkSans";
+    @include breakpoint(md) {
+      width: auto;
+    }
+  }
+
+  &__nav {
+    z-index: 10;
+    position: absolute;
+      top: 50px;
+      left: 0;
+    display: none;
+
+    a {
+      color: grey;
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 15px;
+    };
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      padding: 25px 15px 50px;
+      background-color: $white;
+      border-right: 1px $darkblue solid;
+      border-bottom: 1px $darkblue solid;
+    }
+  }
+
+
+  &__nav, &__nav.open {
+    @include breakpoint(md) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      position: inherit;
+      padding: 10px;
+      background-color: $darkblue;
+      width: auto;
+      height: 35px;
+      border: none;
+      top: 0;
+
+      a {
+        color: $white;
+        margin: 0 25px;
+        font-weight: normal;
+      }
+    }
   }
 
   &__language-toggle {
@@ -25,10 +81,10 @@
   }
 }
 
-/* List Icon animation */
 
+/* List Icon animation */
 #topnav__list-icon {
-  width: 42px;
+  width: 35px;
   height: 30px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -45,7 +101,7 @@
 #topnav__list-icon span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: $white;
   border-radius: 9px;
@@ -66,11 +122,11 @@
 }
 
 #topnav__list-icon span:nth-child(2),#topnav__list-icon span:nth-child(3) {
-  top: 14px;
+  top: 13px;
 }
 
 #topnav__list-icon span:nth-child(4) {
-  top: 29px;
+  top: 26px;
 }
 
 #topnav__list-icon.open span:nth-child(1) {

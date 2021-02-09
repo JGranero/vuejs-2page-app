@@ -15,6 +15,7 @@ Json-Server: npm install -g json-server
 - 2 pages
 - Responsive display
 - Language Toggle
+- Pagination with LoadMore Button
 
 Time was running out but I will probably add a photo carousel for the Site Detail page, a deeper search field and a login page.
 ```

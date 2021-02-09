@@ -1,4 +1,18 @@
 export const frcontent = {
+  header: {
+    nav1: {
+      text: `&#8962; Accueil`,
+      path: `/`
+    },
+    nav2: {
+      text: `Serait-ce`,
+      path: `/`
+    },
+    nav3: {
+      text: `Un Menu?`,
+      path: `/`
+    },
+  },
   loadmore: {
     text: `+ de sites`
   },
