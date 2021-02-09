@@ -1,6 +1,6 @@
 <template>
     <div id="topnav">
-      <MenuIcon id="topnav__list-icon"/>
+      <div id="topnav__list-icon" ref="list_icon" @click="toggleClass()"><span></span><span></span><span></span><span></span></div>
       <h1 id="topnav__title">{{ $route.name }}</h1>
       <div id="topnav__language-toggle" @click="toggleLanguage()">
         {{ $store.state.lang.toUpperCase() }}
@@ -10,15 +10,11 @@
 
 <script>
 import { mapActions, mapMutations } from 'vuex';
-import MenuIcon from '@/assets/images/MenuIcon.vue';
 
 export default {
   name: 'Header',
   props: {
     msg: String
-  }, 
-  components: {
-    MenuIcon
   },
   methods: {
     ...mapActions(['updateLanguage']),
@@ -31,6 +27,9 @@ export default {
         this.UPDATE_LANGUAGE("en");
       }
       this.updateLanguage(this.$store.state.lang);
+    },
+    toggleClass() {
+        this.$refs.list_icon.classList.toggle('open');
     }
   }
 }
