@@ -1,17 +1,17 @@
 <template>
   <div class="site-list">
     <Search/>
-    <div class="site-list__no-result" v-if="$store.state.sites.length == 0">Sorry, no result found with "<strong>{{ $store.state.query }}</strong>".</div>
+    <div class="site-list__results">{{ $store.state.resultTotal }} {{ copy.results }}</div>
+    <div class="site-list__no-result" v-if="$store.state.sites.length == 0">{{ copy.notFound }} "<strong>{{ $store.state.query }}</strong>".</div>
     <Card v-for="(site, index) in $store.state.sites" :key="site.id" :index="index" :site="site"/>
-    <button v-show="currentPage < $store.state.pageTotal" class="loadmore" id="loadmore">
-      <div class="loadmore__content" v-on:click="loadMore()">Load more</div>
-    </button>
+    <LoadMore v-show="currentPage < $store.state.pageTotal" v-on:click="loadMore()" class="loadmore--blue"/>
   </div>
 </template>
 
 <script>
 import Card from '@/components/Card.vue';
 import Search from '@/components/Search.vue';
+import LoadMore from '@/components/LoadMore.vue';
 import { mapActions } from 'vuex';
 
 export default {
@@ -24,7 +24,8 @@ export default {
   },
   components: {
     Card,
-    Search
+    Search,
+    LoadMore
   },
   methods: {
     ...mapActions(['getSites', 'addMoreSites']),
@@ -39,6 +40,9 @@ export default {
     }
   },
   computed: {
+    copy() {
+      return this.$store.state.copydeck.sitelist;
+    }
   },
   mounted() {
     this.getSites({

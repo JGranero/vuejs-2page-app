@@ -1,7 +1,7 @@
 <template>
   <div class="search">
-    <p>Search:</p>
-    <input class="search__input" v-model="searchQuery" type="text" placeholder="Type your research"/>
+    <p>{{ copy.search }}</p>
+    <input class="search__input" v-model="searchQuery" type="text" :placeholder="copy.placeholder"/>
   </div>
 </template>
 
@@ -29,6 +29,9 @@ export default {
     }
   },
   computed: {
+    copy() {
+      return this.$store.state.copydeck.search_component;
+    }
   }
 }
 </script>

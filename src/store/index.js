@@ -6,8 +6,11 @@ import * as getters from './getters';
 
 const state = {
   sites: [],
+  resultTotal: Number,
   pageTotale: Number,
-  query: ""
+  query: "",
+  copydeck: "Object",
+  lang: "en"
 };
 
 export default new Vuex.Store({

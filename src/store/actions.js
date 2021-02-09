@@ -3,6 +3,8 @@
 ================= */
 
 import axios from 'axios';
+import { encontent } from '@/languages/encontent.js';
+import { frcontent } from '@/languages/frcontent.js';
 
 
 export const getSites = ({ state, commit }, payload) => {
@@ -30,7 +32,23 @@ export const getSites = ({ state, commit }, payload) => {
     }
     else {
       commit('ADD_TO_SITES', { payload: response.data, query: payload.query });
-      commit('CHANGE_PAGE_TOTAL', { num: Math.round(response.headers["x-total-count"] / payload.limit + .5) });
+      commit('CHANGE_SEARCH_DATA', { pages: Math.round(response.headers["x-total-count"] / payload.limit + .5), results: response.headers["x-total-count"] });
     }
   })
 }
+
+export const updateLanguage = ({ commit }, payload) => {
+  document.documentElement.lang = payload;
+
+  commit('UPDATE_LANGUAGE', payload);
+
+  if (payload === 'en') {
+    commit('UPDATE_COPY', {
+      lang: encontent
+    });
+  } else if (payload === 'fr') {
+    commit('UPDATE_COPY', {
+      lang: frcontent
+    });
+  }
+};

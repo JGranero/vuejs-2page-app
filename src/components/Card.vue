@@ -13,18 +13,23 @@
       <p> {{ site.contacts.main.address.city }}, {{ site.contacts.main.address.country.toUpperCase() }}</p>
     </div>
     <div class="card__arrow">
-      <img src="@/assets/images/nextblue.svg"/>
+      <ArrowIcon/>
     </div>
   </div>
 </router-link>
 </template>
 
 <script>
+import ArrowIcon from '@/assets/images/ArrowIcon';
+
 export default {
   name: 'Card',
   props: {
     site: Object,
     index: Number
+  },
+  components: {
+    ArrowIcon
   },
   methods: {
     stockDetails() {

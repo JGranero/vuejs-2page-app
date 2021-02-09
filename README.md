@@ -1,8 +1,11 @@
-# hello-world
-
 ## Project setup
 ```
-yarn install
+Node: n v12.6.0
+Yarn: yarn install
+Json-Server: npm install -g json-server
+             curl -o db-initial.json https://tracktik-challenge.staffr.com/db
+             cp db-initial.json db.json
+             json-server --watch db.json
 ```
 
 ### Compiles and hot-reloads for development

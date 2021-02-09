@@ -3,7 +3,7 @@
 =============== */
 
 #topnav {
-  background-color: $kaki;
+  background-color: $darkblue;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,7 @@
 
   &__list-icon {
     height: 30px;
-    width: 35px;
+    width: 30px;
 
     path {
       fill: white;
@@ -24,9 +24,12 @@
     text-align: center;
     width: 60%;
     letter-spacing: .1rem;
+    font-family: "WorkSans";
   }
 
-  &__left {
+  &__language-toggle {
     width: 35px;
+    font-size: 22px;
+    cursor: pointer;
   }
 }
