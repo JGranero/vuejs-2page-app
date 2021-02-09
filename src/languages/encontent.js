@@ -5,10 +5,14 @@ export const encontent = {
       path: `/`
     },
     nav2: {
-      text: `Could be`,
+      text: `This`,
       path: `/`
     },
     nav3: {
+      text: `Could be`,
+      path: `/`
+    },
+    nav4: {
       text: `A Menu`,
       path: `/`
     },

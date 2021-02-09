@@ -4,14 +4,14 @@
 
 .site-details {
   &__top-info {
-    display: flex;
-    align-items: center;
-    padding: 15px;
     background-color: $lightblue;
     border-top: 1px solid $white;
     color: $white;
-    @include breakpoint(lg) {
-      color: $black;
+
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 15px;
     }
 
     svg {
@@ -42,9 +42,32 @@
     height: 265px;
     width: 100%;
     border-bottom: 12px solid $lightblue;
+    @include breakpoint(md) {
+      height: auto;
+      max-height: 450px;
+      overflow: hidden;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      height: 244px;
+      overflow: hidden;
+    }
 
     img {
       height: 100%;
+      @include breakpoint(md) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__main-info {
+    @include breakpoint(md) {
+      border-top: 8px solid $lightblue;
+      padding-top: 15px;
     }
   }
 

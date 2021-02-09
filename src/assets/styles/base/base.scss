@@ -36,6 +36,13 @@ body {
   color: $darkgrey;
 }
 
+.container {
+  @include breakpoint(md) {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
 h1, h2, h3 {
   font-family: 'Roboto';
 }

@@ -18,6 +18,9 @@
     padding: 5px;
     min-width: 55%;
     height: 17px;
+    @include breakpoint(md) {
+      min-width: 250px;
+    }
   }
 
   &__cross {

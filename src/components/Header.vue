@@ -1,12 +1,14 @@
 <template>
     <div id="topnav">
-      <div id="topnav__list-icon" ref="list_icon" @click="toggleClass()"><span></span><span></span><span></span><span></span></div>
-      <h1 id="topnav__title">{{ $route.name }}</h1>
-      <nav id="topnav__nav" ref="nav">
-        <router-link v-for="(el, index) in copy" :key="index" :to="el.path" v-html="el.text"></router-link>
-      </nav>
-      <div id="topnav__language-toggle" @click="toggleLanguage()">
-        {{ $store.state.lang.toUpperCase() }}
+      <div class="container">
+        <div id="topnav__list-icon" ref="list_icon" @click="toggleClass()"><span></span><span></span><span></span><span></span></div>
+        <h1 id="topnav__title">{{ $route.name }}</h1>
+        <nav id="topnav__nav" ref="nav">
+          <router-link v-for="(el, index) in copy" :key="index" :to="el.path" v-html="el.text"></router-link>
+        </nav>
+        <div id="topnav__language-toggle" @click="toggleLanguage()">
+          {{ $store.state.lang.toUpperCase() }}
+        </div>
       </div>
     </div>
 </template>
